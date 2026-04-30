@@ -2,251 +2,329 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jenerica Naneu - Web Designer & Developer</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrap">
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jenerica Naneu — Full-Stack Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="navbar__container">
-
-    <!-- Hamburger  -->
-    <div id="mobile-menu" class="navbar__toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-
-    <!-- Logo -->
-    <a href="#" class="navbar_logo">
-      <div class="logo-text">Jenerica Naneu</div>
-    </a>
-
-    <ul class="navbar__menu">
-      <li><a href="#home" class="navbar__links">Home</a></li>
-      <li><a href="#about" class="navbar__links">About</a></li>
-      <li><a href="#works" class="navbar__links">Work</a></li>
-      <li><a href="#innovations" class="navbar__links">Innovations</a></li>
-      <li class="navbar__btn"><a href="#contact" class="button">Contact Me</a></li>
+ 
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="nav-logo">Jenerica<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Work</a></li>
+      <li><a href="#innovations">Innovations</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
     </ul>
-
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+ 
+  <!-- SIDEBAR -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <div class="sidebar" id="sidebar">
+    <a href="#home" class="sidebar-link">Home</a>
+    <a href="#about" class="sidebar-link">About</a>
+    <a href="#works" class="sidebar-link">Work</a>
+    <a href="#innovations" class="sidebar-link">Innovations</a>
+    <a href="#contact" class="sidebar-link sidebar-cta">Hire Me</a>
   </div>
-</nav>
-
-
-<!--HERO-->
-<section id="home" class="hero">
-  <div class="hero__container">
-
-    <div class="hero__content">
-      <h1>JENERICA</h1>
-      <h2>NANEU</h2>
-      <p>Your Gateway to Elegant Web Solutions</p>
-
-      <div class="hero__buttons">
-        <a href="#works" class="main_btn">Explore</a>
-        <a href="#contact" class="main_btn">Let's Connect</a>
+ 
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-label">Available for projects · Nairobi, Kenya</div>
+        <h1 class="hero-title">
+          Jenerica<br>
+          <span class="line2">Naneu</span>
+        </h1>
+        <p class="hero-sub">Full-Stack Web Developer building elegant, high-performance digital systems — from secure backends to polished frontends.</p>
+        <div class="hero-actions">
+          <a href="#works" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-ghost">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-img-frame">
+          <img src="Images/Programmer 2.jpg" alt="Jenerica Naneu" />
+          <div class="hero-stats">
+            <div class="num">5+</div>
+            <div class="label">Live Projects</div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="hero__image">
-      <img src="/Images/Programmer 2.jpg" alt="Jenerica working" />
-    </div>
-
-  </div>
-</section>
-
-<!--ABOUT-->
-<section id="about" class="section">
-  <h2 class="section__title">About Me</h2>
-
-  <div class="section__content about__content">
-
-    <p>
-      I am a Full-Stack Software Developer with a strong foundation in Computer Science 
-      and a passion for building elegant, high-performance digital systems. 
-      My work combines clean user experience design with scalable backend architecture, 
-      ensuring that every solution is both refined and technically robust.
-    </p>
-
-    <p>
-      With core programming expertise in <strong>Python, C, and C++</strong>, 
-      I approach development with a systems-oriented mindset. 
-      I specialize in modern web technologies including 
-      <strong>HTML, CSS3, JavaScript, React, and Tailwind CSS</strong> 
-      for frontend development, and 
-      <strong>Node.js, Express, Django, and Flask</strong> for backend systems.
-      I work confidently with databases such as <strong>MongoDB and MySQL</strong>.
-    </p>
-
-    <p>
-      My current focus is on AI integration within FinTech, EdTech, and Health Systems, 
-      alongside strengthening my expertise in Cybersecurity — particularly 
-      secure backend design and application security. 
-      I am deeply interested in building scalable architectures that power 
-      impactful digital platforms.
-    </p>
-
-    <p>
-      Long-term, my vision is to contribute to Africa’s technological growth 
-      by developing resilient, intelligent systems that solve real-world problems. 
-      I am also building <strong>Lenasola</strong>, a modern technology solutions company 
-      focused on delivering scalable and innovative digital services.
-    </p>
-
-  </div>
-</section>
-
-
-<!--WORKS-->
-<section id="works" class="section dark">
-  <h2 class="section__title">My Work</h2>
-
-  <div class="works__grid">
-
-    <div class="work__card">
-      <img src="/Images/Fashion 2.jpg" alt="Real Estate Website">
-      <h3><a href="https://primenest-reality.netlify.app/">Real Estate Website</a></h3>
-      <p>Sleek minimalist website with smooth animations.</p>
-    </div>
-
-    <div class="work__card">
-      <img src="/Images/Photographer 2.jpg" alt="Photography Portfolio">
-      <h3><a href="https://memories-photography.netlify.app/">Photography Portfolio</a></h3>
-      <p>Elegant gallery layout with immersive visuals.</p>
-    </div>
-
-    <div class="work__card">
-      <img src="/Images/Blog 2.jpg" alt="Modern Blog">
-      <h3>School Website</h3>
-      <p>Clean School website optimized for readability.</p>
-    </div>
-
-  </div>
-</section>
-
-<!--INNOVATIONS-->
-<section id="innovations" class="section">
-  <h2 class="section__title">Innovations</h2>
-  <div class="section__content">
-
-    <div class="innovation_card">
-      <img src="/Images/Erp 2.jpeg" alt="School ERP and SMS System">
-      <h3>School ERP and SMS System</h3>
-      <p>Full-stack enterprise-grade school management platform</p>
-    </div>
-    <div class="innovation_card">
-      <img src="/Images/Edtech 2.jpeg" alt="NexusLearn (EdTech Platform)">
-      <h3>NexusLearn (EdTech Platform)</h3>
-      <p>Modern learning management & timetable system</p>
-    </div>
-    <div class="innovation_card">
-      <img src="/Images/Authentication 2.jpeg" alt="Secure Authentication System">
-      <h3>Secure Authentication System</h3>
-      <p>Custom authentication with JWT and Role-based access control</p>
-    </div>
-  </div>
-</section>
-
-<!--CONTACT-->
-<section id="contact" class="section dark premium-contact">
-  <h2 class="section__title">Let’s Build Something Exceptional</h2>
-
-  <div class="contact__container">
-
-    <div class="contact__info">
-      <h3>Get In Touch</h3>
-      <p>
-        I’m currently available for freelance work, collaborations,
-        and innovative digital projects.
-      </p>
-
-      <div class="contact__details">
-        <p><strong>Email:</strong> lengapianinaneu@gmail.com</p>
-        <p><strong>Location:</strong> Nairobi, Kenya</p>
+  </section>
+ 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">Who I Am</div>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>Full-Stack Web Developer</strong> currently pursuing a BSc in Computer Science at Machakos University. I build production-ready web applications — from database design and secure backend logic to clean, responsive frontends.</p>
+        <p>My strongest work is in <strong>PHP, MySQL, JavaScript, and React</strong>. I've shipped real applications including <strong>SUSA</strong>, a live student organization management platform, and several client-facing websites deployed to production.</p>
+        <p>I approach every project with a systems mindset — clean architecture, secure code, and interfaces that actually work for real users. I'm also building <strong>Lenasola</strong>, a technology solutions company focused on digital platforms for Africa.</p>
+        <p>Currently exploring AI integration within EdTech and Health Systems, and deepening expertise in secure backend design.</p>
       </div>
-
-      <div class="contact__socials">
-        <a href="https://www.linkedin.com/in/jenerica-naneu-a657a038b/">LinkedIn</a>
-        <a href="https://github.com/Naneu-j">GitHub</a>
+      <div class="skills-grid reveal reveal-delay-1">
+        <div class="skill-group">
+          <label>Frontend</label>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <label>Backend</label>
+          <div class="skill-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Django</span>
+            <span class="tag">Flask</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <label>Tools & Platforms</label>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">Postman</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <label>Security</label>
+          <div class="skill-tags">
+            <span class="tag">JWT Auth</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">XSS Prevention</span>
+            <span class="tag">Input Sanitization</span>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+ 
+  <!-- WORK -->
+  <section id="works">
+    <div class="section-label">What I've Built</div>
+    <h2 class="section-title">My Work</h2>
+    <div class="projects-grid">
+ 
+      <!-- SUSA — FEATURED -->
+      <div class="project-card featured-card reveal">
+        <img class="card-img" src="Images/Erp 2.jpeg" alt="SUSA Student Organization Platform" />
+        <div class="card-body">
+          <div class="card-badge"> Featured · Live Project</div>
+          <div class="card-title">SUSA — Student Organization Platform</div>
+          <p class="card-desc">A full-stack student organization management system, live at susa.co.ke. Features secure authentication, role-based access control, admin dashboard, member management, and full CRUD operations. Built with a focus on production-grade security — XSS protection, SQL injection prevention, and input sanitization throughout.</p>
+          <div class="card-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5 / CSS3</span>
+            <span class="tag">RBAC</span>
+          </div>
+          <a href="https://susa.co.ke" target="_blank" class="card-link">View Live Site →</a>
+        </div>
+      </div>
+ 
+      <!-- Real Estate -->
+      <a href="https://primenest-reality.netlify.app/" target="_blank" class="project-card reveal reveal-delay-1">
+        <img class="card-img" src="Images/Real estate 1.jpg" alt="PrimeNest Real Estate" />
+        <div class="card-body">
+          <div class="card-badge">Web Design</div>
+          <div class="card-title">PrimeNest Real Estate</div>
+          <p class="card-desc">A sleek property listing website with smooth scroll animations, responsive layouts, and a clean minimalist aesthetic designed for a modern real estate audience.</p>
+          <div class="card-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <span class="card-link">View Live →</span>
+        </div>
+      </a>
+ 
+      <!-- Photography -->
+      <a href="https://memories-photography.netlify.app/" target="_blank" class="project-card reveal reveal-delay-2">
+        <img class="card-img" src="Images/Photographer 2.jpg" alt="Memories Photography Portfolio" />
+        <div class="card-body">
+          <div class="card-badge">Client Project</div>
+          <div class="card-title">Memories Photography Portfolio</div>
+          <p class="card-desc">An immersive gallery portfolio for a photography client. Features a full-screen image grid, lightbox preview, and a layout built to let the photography speak.</p>
+          <div class="card-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <span class="card-link">View Live →</span>
+        </div>
+      </a>
 
-   <form 
-  name="contact" 
-  method="POST" 
-  data-netlify="true" 
-  netlify-honeypot="bot-field"
-  class="contact__form"
->
+      <!-- Habit Tracker -->
+      <a href="https://narlah.netlify.app/" target="_blank" class="project-card reveal reveal-delay-1">
+        <img class="card-img" src="Images/habit tracker 1.png" alt="Narlah Habit-Tracker" />
+        <div class="card-body">
+          <div class="card-badge">Web Design</div>
+          <div class="card-title">Narlah Habit-Tracker</div>
+          <p class="card-desc">A sleek habit tracking application with smooth scroll animations, responsive layouts, and a clean minimalist aesthetic designed for a modern clean girl aesthetics.</p>
+          <div class="card-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <span class="card-link">View Live →</span>
+        </div>
+      </a>
 
-  <!-- Hidden input required for Netlify -->
-  <input type="hidden" name="form-name" value="contact">
-
-  <!-- Spam protection -->
-  <p style="display:none">
-    <label>Don’t fill this out if you're human: 
-      <input name="bot-field">
-    </label>
-  </p>
-
-  <div class="form__group">
-    <input type="text" name="name" placeholder="Your Name" required>
-  </div>
-
-  <div class="form__group">
-    <input type="email" name="email" placeholder="Your Email" required>
-  </div>
-
-  <div class="form__group">
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-  </div>
-
-  <button type="submit" class="main_btn">Send Message</button>
-
-</form>
-<div id="form-success" class="form__success">
-  Thank you for contacting me. I’ll get back to you shortly.
-</div>
-
-
-  </div>
-</section>
-
-<!--PREMIUM FOOTER-->
-<footer class="footer premium-footer">
-
-  <div class="footer__top">
-    <div class="footer__brand">
-      <h3>Jenerica Naneu</h3>
-      <p>Elegant Web Designer & Developer</p>
+      <!-- Weather Dashboard -->
+      <a href="https://zephyr-dash.netlify.app/" target="_blank" class="project-card reveal reveal-delay-1">
+        <img class="card-img" src="Images/Weathe 1.png" alt="Zephyr Dashboard" />
+        <div class="card-body">
+          <div class="card-badge">Web Design</div>
+          <div class="card-title">Zephyr Dashboard</div>
+          <p class="card-desc">A sleek weather dashboard with real-time data visualization, responsive layouts, and a clean minimalist aesthetic designed for a modern user experience.</p>
+          <div class="card-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <span class="card-link">View Live →</span>
+        </div>
+      </a>
+ 
+      <!-- School Website -->
+      <div class="project-card reveal reveal-delay-3">
+        <img class="card-img" src="Images/Blog 2.jpg" alt="School Website" />
+        <div class="card-body">
+          <div class="card-badge">Web Development</div>
+          <div class="card-title">School Website</div>
+          <p class="card-desc">A clean, accessible school website optimized for readability and ease of navigation. Includes dynamic content sections, a clean information hierarchy, and mobile-first design.</p>
+          <div class="card-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+ 
     </div>
-
-    <div class="footer__nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#works">Work</a>
-      <a href="#contact">Contact</a>
+  </section>
+ 
+  <!-- INNOVATIONS -->
+  <section id="innovations">
+    <div class="section-label">Larger Builds</div>
+    <h2 class="section-title">Innovations</h2>
+    <div class="innovations-grid">
+ 
+      <div class="innov-card reveal">
+        <img class="innov-img" src="Images/Erp 2.jpeg" alt="School ERP" />
+        <div class="innov-body">
+          <div class="innov-title">School ERP & SMS System</div>
+          <p class="innov-desc">Enterprise-grade school management platform with student records, timetables, teacher dashboards, and full admin controls. Built with PHP, MySQL, and JavaScript.</p>
+        </div>
+      </div>
+ 
+      <div class="innov-card reveal reveal-delay-1">
+        <img class="innov-img" src="Images/Edtech 2.jpeg" alt="NexusLearn" />
+        <div class="innov-body">
+          <div class="innov-title">NexusLearn — EdTech Platform</div>
+          <p class="innov-desc">A modern learning management system featuring course management, timetable scheduling, student progress tracking, and an interactive dashboard UI.</p>
+        </div>
+      </div>
+ 
+      <div class="innov-card reveal reveal-delay-2">
+        <img class="innov-img" src="Images/Authentication 2.jpeg" alt="Auth System" />
+        <div class="innov-body">
+          <div class="innov-title">Secure Authentication System</div>
+          <p class="innov-desc">A custom authentication system built on JWT tokens and Role-Based Access Control (RBAC). Designed as a reusable, drop-in auth module for full-stack Node.js apps.</p>
+        </div>
+      </div>
+ 
+      <div class="innov-card reveal reveal-delay-3">
+        <img class="innov-img" src="Images/Programmer 2.jpg" alt="Lenasola Tech Company" />
+        <div class="innov-body">
+          <div class="innov-title">Lenasola — Technology Solutions Company</div>
+          <p class="innov-desc">Building a modern technology solutions company focused on delivering scalable, innovative digital services across Africa. Currently in development — laying the foundation for resilient platforms that solve real-world problems.</p>
+        </div>
+      </div>
+ 
     </div>
-  </div>
-
-  <div class="footer__divider"></div>
-
-  <div class="footer__bottom">
-    <p>© 2026 Jenerica Naneu. Crafted with precision.</p>
-  </div>
-
-</footer>
-
-
-
-<script src="scripts.js"></script>
+  </section>
+ 
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Let's Build Something</h2>
+    <div class="contact-inner">
+      <div class="contact-info reveal">
+        <p>Currently available for freelance work, collaborations, and contract projects. If you have a web project that needs a developer who ships real, production-ready work — let's talk.</p>
+        <div class="contact-detail">
+          <div class="contact-row">
+            <div class="icon">✉</div>
+            <a href="mailto:lengapianinaneu@gmail.com">lengapianinaneu@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <div class="icon">📍</div>
+            <span>Nairobi, Kenya</span>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/jenerica-naneu-a657a038b/" target="_blank" class="social-btn">LinkedIn ↗</a>
+          <a href="https://github.com/Naneu-j" target="_blank" class="social-btn">GitHub ↗</a>
+        </div>
+      </div>
+      <form class="contact-form reveal reveal-delay-1" id="contactForm">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <div class="form-group honeypot">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" />
+        </div>
+        <button type="submit" class="form-submit">Send Message →</button>
+        <div class="form-success" id="formSuccess">Thanks! I'll get back to you shortly.</div>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo">Jenerica<span>.</span></div>
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="copy">© 2026 Jenerica Naneu</div>
+  </footer>
+ 
+  <script src="script.js"></script>
 </body>
 </html>
