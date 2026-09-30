@@ -50,16 +50,27 @@
     });
  
     // Form
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const honey = this.querySelector('[name="_honey"]');
-      if (honey && honey.value) return;
-      const btn = this.querySelector('.form-submit');
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
-      setTimeout(() => {
-        this.reset();
-        btn.style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-      }, 800);
+ document.getElementById('contactForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const btn = this.querySelector('.form-submit');
+  const ok = document.getElementById('formSuccess');
+  const err = document.getElementById('formError');
+  err.style.display = 'none';
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(this)).toString()
     });
+    if (!res.ok) throw new Error();
+    this.reset();
+    btn.style.display = 'none';
+    ok.style.display = 'block';
+  } catch {
+    btn.textContent = 'Send Message →';
+    btn.disabled = false;
+    err.style.display = 'block';
+  }
+});
